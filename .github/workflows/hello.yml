@@ -14,7 +14,7 @@ jobs:
         run: echo Hello from GitHub Actions
 
       - name: Show the date
-        run: echo Today is %DATE%
+        run: echo Today is $(Get-Date)
 
       - name: Show which folder you are inside
-        run: cd
+        run: pwd
