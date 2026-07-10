@@ -1,7 +1,9 @@
 name: Hello world
+
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   say-hello:
@@ -9,9 +11,10 @@ jobs:
 
     steps:
       - name: Print a message
-        run: exho Hello from github Actions
-      - name: show the date
-        run: echo today is %DATE%
+        run: echo Hello from GitHub Actions
+
+      - name: Show the date
+        run: echo Today is %DATE%
+
       - name: Show which folder you are inside
-        run: cd 
-  
+        run: cd
