@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub CI/CD Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚀 GitHub Actions CI/CD</h1>
+        <p>Your application has been deployed successfully.</p>
+
+        <div class="card">
+            <h2>Deployment Status</h2>
+            <p>✅ Build Successful</p>
+            <p>✅ Tests Passed</p>
+            <p>✅ Deployment Completed</p>
+        </div>
+
+        <button onclick="showMessage()">Verify Deployment</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "🎉 Congratulations! Your GitHub Actions CI/CD pipeline is working.";
+        }
+    </script>
+
+</body>
+</html>
